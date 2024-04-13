@@ -14,10 +14,10 @@ const CardComponent = ({ title, description, imageSrc }) => {
             borderRadius='lg'
           />
           <Stack mt='6' spacing='3'>
-            <Heading size='md'>Living room Sofa</Heading>
+            <Heading size='md'>{title}</Heading>
             <Text>{description}</Text>
             <Button variant='ghost' colorScheme='blue'>
-              See More
+              See More <FontAwesomeIcon icon={faArrowRight} size="1x" spacing={2}/>
             </Button>
           </Stack>
         </CardBody>
